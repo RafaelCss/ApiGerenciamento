@@ -276,3 +276,9 @@ C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Microsoft.A
 C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.APIGatewayEvents.dll
+C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.ApplicationLoadBalancerEvents.dll
+C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.AspNetCoreServer.dll
+C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.Core.dll
+C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.Logging.AspNetCore.dll
+C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.Serialization.SystemTextJson.dll
