@@ -13,7 +13,7 @@
     <WebStackScaffolding_DbContextTypeFullName>Application.Contexto.ContextoUsuario</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <NameOfLastUsedPublishProfile>FolderProfile</NameOfLastUsedPublishProfile>
-    <ActiveDebugProfile>Docker</ActiveDebugProfile>
+    <ActiveDebugProfile>Application</ActiveDebugProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

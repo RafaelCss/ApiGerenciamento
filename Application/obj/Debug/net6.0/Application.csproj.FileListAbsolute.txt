@@ -282,3 +282,5 @@ C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lamb
 C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.Core.dll
 C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.Logging.AspNetCore.dll
 C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Npgsql.dll
+C:\Users\rf201\source\repos\Application\Application\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

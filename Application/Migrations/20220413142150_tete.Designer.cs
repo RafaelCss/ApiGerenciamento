@@ -5,49 +5,54 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace Application.Migrations
 {
     [DbContext(typeof(ContextoUsuario))]
-    [Migration("20220407150310_ajuste")]
-    partial class ajuste
+    [Migration("20220413142150_tete")]
+    partial class tete
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.3")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("Application.Classes.Usuario", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("email")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("name")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("password")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("updatedAt")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("user")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.HasKey("id");
 
