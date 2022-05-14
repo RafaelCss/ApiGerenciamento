@@ -19,7 +19,8 @@ builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
    .AddNegotiate();
 // Conexão com banco de dados ----
 string ContextUsuario = builder.Configuration.GetConnectionString("ContextUsuario"); // Nova forma de conectar ao banco de dados .Net 6
-builder.Services.AddDbContext<ContextoUsuario>(options => options.UseNpgsql(ContextUsuario));
+// var serverVersion = new MySqlServerVersion(new Version(8, 0, 26));
+builder.Services.AddDbContext<ContextoUsuario>(options => options.UseMySql(ContextUsuario,MySqlServerVersion.AutoDetect(ContextUsuario)));
 //------
 builder.Services.AddAuthorization(options =>
 {
@@ -39,9 +40,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
 app.MapControllers();
 
