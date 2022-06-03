@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Application.Classes;
 using Application.Contexto;
+using Application.Entidades.Autenticacao;
 
 namespace Application.Controllers
 {
@@ -17,9 +18,10 @@ namespace Application.Controllers
     {
         private readonly ContextoUsuario _context;
 
-        public UsuariosController(ContextoUsuario context)
+        public UsuariosController(ContextoUsuario context )
         {
             _context = context;
+        
         }
 
         // GET: api/Usuarios
@@ -84,6 +86,7 @@ namespace Application.Controllers
 
             return CreatedAtAction("GetUsuario", new { id = usuario.id }, usuario);
         }
+
 
         // DELETE: api/Usuarios/5
         [HttpDelete("{id}")]

@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Application.Classes;
+using Microsoft.AspNetCore.Identity;
 
 namespace Application.Entidades.Autenticacao
 {
     public class Autenticacao : IdentityUser
-    {
+    {   
+     
     }
+
 }
